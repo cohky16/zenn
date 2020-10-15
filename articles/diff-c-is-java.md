@@ -1,4 +1,10 @@
-# JavaとC言語の違い
+---
+title: "JavaとC言語の違い" # 記事のタイトル
+emoji: "💻" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["Java","C"] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+---
 
 はじめまして！エンジニアをやっているコウキと申します。
 勉強のアウトプットがてら、Zennで記事をちょこちょこ書いていきます。
@@ -25,14 +31,14 @@ Progateで学べれば良かったのですが、C言語は対応してないよ
 
 コードで比較するとこんな感じです。
 
-```Java:print.java
+```java:print.java
 
 int x = 10;
 
 System.out.println(x); // 10
 ```
 
-```C:print.c
+```c:print.c
 
 int x = 10;
 
@@ -43,7 +49,7 @@ printf("%d\n", x); // 10
 
 Javaでは、関数の上下は関係なく標準でそのファイル内にあるクラス全てを参照することができます。
 
-```Java:order.java
+```java:order.java
 public static void main(String[] args) {
     sayHi() // main関数の下にsayHi関数があるが、エラーはでない
 } 
@@ -55,7 +61,7 @@ static void sayHi() {
 
 C言語では、関数の上下が関係しており、参照する関数が宣言した関数の下にあるとエラーになる。
 
-```C:order.c
+```c:order.c
 int main(void) {
     sayHi(); // main関数の下にあるため、エラーになる
     return 0;
@@ -69,7 +75,7 @@ void sayHi(void) {
 ただ、「プロトタイプ宣言」というのを用いることで回避ができます。
 main関数より上に関数名を記述するだけです。
 
-```C:order.c
+```c:order.c
 void sayHi(void); // プロトタイプ宣言
 
 int main(void) {
@@ -86,7 +92,7 @@ void sayHi(void) {
 
 C言語にはString型がありません。String型はCharの配列として表現する必要があります。
 
-```C:string.c
+```c:string.c
 
 char a[] = "abc";
 
@@ -100,7 +106,7 @@ Javaでもポインタはあるにはあるらしいのですが、普段から�
 簡単に言うと、**メモリに値を保持して利用する。**
 といった感じですかね。
 
-```C:pointer.c
+```c:pointer.c
 int main(void) {
 
     int a = 10; // ここでメモリに10という値が割り当てられる(アドレスを#0000とする)
