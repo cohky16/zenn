@@ -2,7 +2,7 @@
 title: "MacでC言語~環境構築編~"
 emoji: "🔧"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Mac","Clang","VSCode"]
+topics: ["Mac","C","VSCode"]
 published: true
 ---
 
