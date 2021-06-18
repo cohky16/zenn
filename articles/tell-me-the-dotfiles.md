@@ -36,7 +36,7 @@ https://github.com/cohky16/dotfiles
 公式がとてもわかりやすいので導入はそっち見たほうが良いと思います。
 ただ私には色が眩しすぎたのでiTerm2で色をいじってます。
 
-![starship](https://gyazo.com/1a73659cd5af3020bc5b8494fb9f813a)
+![starship](https://i.gyazo.com/1a73659cd5af3020bc5b8494fb9f813a.png)
 
 https://starship.rs/ja-JP/
 
@@ -45,13 +45,13 @@ https://starship.rs/ja-JP/
 hybridがいい感じだったので使ってます。
 使用頻度高くないのでそこまでこだわりはありません。
 
-![hybrid](https://gyazo.com/d837e238df36e8c92169598cb8dd0c56)
+![hybrid](https://i.gyazo.com/d837e238df36e8c92169598cb8dd0c56.png)
 
 ### iTerm2(iTerm2の設定)
 
 私の場合、optionを2回押すと上からターミナルが降ってくる的な感じにしてます。
 
-![iTerm2](https://gyazo.com/7e776574f4dcc433ef25dc2156294b68)
+![iTerm2](https://i.gyazo.com/7e776574f4dcc433ef25dc2156294b68.gif)
 
 #### 降ってくる設定
 
