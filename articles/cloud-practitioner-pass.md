@@ -54,6 +54,7 @@ https://www.udemy.com/course/aws-4260/
 https://d1.awsstatic.com/ja_JP/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf
 
 模擬試験は受けても受けなくてもどっちでもいい気がしてます。私は無料のバウチャーがあったので受けましたが、単純にスコアが帰ってくるだけでどこを間違えたかとかは明確に提示してくれないため、あまり役立ちませんでした。自分用にスクショして復習するとかならいいかもしれません。それが許されるのかは不明です。
+
 ちなみに私の結果は62%でしたが、普通に合格できたのであくまで参考程度でいいと思います。
 
 難易度順としては、Udemy > 本試験 > 模擬試験 > サンプル問題　ってイメージです。
