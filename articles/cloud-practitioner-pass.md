@@ -6,7 +6,7 @@ topics: ["AWS"]
 published: true
 ---
 
-AWSクラウドプラクティショナーに合格しました〜
+AWSクラウドプラクティショナーに合格しました〜〜
 
 ![score](https://i.gyazo.com/94e8a969ff44a2f88e7cb3101d27d41b.png)
 
