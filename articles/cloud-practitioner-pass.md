@@ -1,12 +1,12 @@
 ---
-title: "AWSクラウドプラクティショナーに合格したのでまとめます"
+title: "AWS認定クラウドプラクティショナーに合格したのでまとめます"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["AWS"]
 published: true
 ---
 
-AWSクラウドプラクティショナーに合格しました〜〜
+AWS認定クラウドプラクティショナーに合格しました〜〜
 
 ![score](https://i.gyazo.com/94e8a969ff44a2f88e7cb3101d27d41b.png)
 
@@ -57,7 +57,7 @@ https://d1.awsstatic.com/ja_JP/training-and-certification/docs-cloud-practitione
 
 ちなみに私の結果は62%でしたが、普通に合格できたのであくまで参考程度でいいと思います。
 
-難易度順としては、Udemy > 本試験 > 模擬試験 > サンプル問題　ってイメージです。
+難易度順としては、Udemy > 本試験 > 模擬試験 > サンプル問題 ってイメージです。
 
 上にも書きましたが、Udemyのやつやってれば合格には十分だと思います。わからない単語は都度調べて、Zennのスクラップブックとかにまとめておくのもいいですね。
 
