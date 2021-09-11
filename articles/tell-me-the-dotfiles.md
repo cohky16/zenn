@@ -1,5 +1,5 @@
 ---
-title: "あなたのdotfilesを教えて！"
+title: "あなたのdotfilesを教えて！(随時更新)"
 emoji: "🙏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dotfiles"]
@@ -25,7 +25,10 @@ https://github.com/cohky16/dotfiles
 - iTerm2(iTerm2の設定)
 - .vimrc(vimの設定)
 - .zshrc(zshの設定)
-- init.sh(シンボリックリンク作成のシェルスクリプト)
+- Brewfile(HomeBrewの管理)
+- lib/npm.sh(グローバルnpmパッケージの管理)
+- initial.sh(完全な初期セットアップ時のシェルスクリプト)
+- deploy.sh(シンボリックリンク作成のシェルスクリプト)
 
 一つずつ詳細書きます。
 
@@ -92,25 +95,107 @@ eval "$(starship init zsh)"
 export GO111MODULE=on
 
 # alias
+
+## system
+alias v='vim'
+alias e='exit'
+alias sz='source ~/.zshrc'
+alias ..2='cd ../../'
+alias ..3='cd ../../../'
+
+## package 
+alias y='yarn'
 alias yi='yarn install'
-alias yr='yarn run'
-alias gp='git pull origin'
+alias ya='yarn add'
+alias n='npm'
+alias ni='npm install'
+
+## git
+alias g='git'
+alias gs='git status'
+alias gc='git checkout'
+alias gp='git push origin $(git rev-parse --abbrev-ref HEAD)'
+alias gl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
+alias glm='git pull origin master'
+alias t='tig'
+
+## docker
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down --volumes'
 ```
 
-### init.sh(シンボリックリンク作成のシェルスクリプト)
+### Brewfile(HomeBrewの管理)
 
-特に言うことなし。
+HomeBrewで管理しているツールがまとまっているファイルです。
+
+`brew bundle dump`でダンプ、`brew bundle install`でインストールができます。
+
+### lib/npm.sh(グローバルnpmパッケージの管理)
+
+グローバルでインストールしているnpmモジュールを管理するスクリプトです。
+
+後述のinitial.shで呼び出すので関数にしてます。完全にハードコーディングなので改善の余地ありって感じです。
+
+```shell
+#!/bin/bash
+
+run_npm() {
+  npm i -g \
+    @aws-amplify/cli \
+    commitizen \
+    cz-conventional-changelog \
+    n \
+    nodemon \
+    npm \
+    serve \
+    serverless \
+    ts-node \
+    tsas \
+    typeorm \
+    typescript
+}
+```
+
+### initial.sh(完全な初期セットアップ時のシェルスクリプト)
+
+新規で環境構築する時に走らせるスクリプトです。
+
+HomeBrewのツール、npmのモジュールをインストールします。
 
 ```shell
 #!/bin/bash
 
 set -eu
 
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.config ~/.config
-ln -sf ~/dotfiles/.vim ~/.vim
-bash ./iTerm2/init.sh
+brew bundle install
+source ~/dotfiles/lib/npm.sh
+run_npm
+./deploy.sh
+```
+
+### deploy.sh(シンボリックリンク作成のシェルスクリプト)
+
+新規でdotfileを追加しても変更が不要になるようにfor文で回して、サブモジュールとiTerm2の設定ファイルを適用するコマンドも入れています。
+
+plistファイルはシンボリックリンクでやろうとするとうまく行かなかったので単純にコピーするようにしました。ここ地味に詰まった…
+
+```shell
+#!/bin/bash
+
+set -eu
+
+for f in .??*
+do
+  [[ $f == ".git" ]] && continue
+  [[ $f == ".DS_Store" ]] && continue
+  [[ $f == ".vim" ]] && continue
+  [[ $f == ".config" ]] && continue
+  echo "$f"
+  ln -sf ~/dotfiles/$f ~/
+done
+
+git submodule update -i
+cp -f iTerm2/com.googlecode.iterm2.plist ~/Library/Preferences
 ```
 
 現状の私はこのような感じです。
