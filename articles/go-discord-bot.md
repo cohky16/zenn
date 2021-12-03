@@ -81,7 +81,7 @@ discord, err := discordgo.New("Bot " + "authentication token")
 
 ```go
 func main() {
-  discord, err := discordgo.New("Bot " + "authentication token")
+  	discord, err := discordgo.New("Bot " + "authentication token")
   
 	discord.AddHandler(onMessageCreate)
 
