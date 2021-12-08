@@ -119,7 +119,7 @@ published: true
       - dx1 * dy2 = (Bx - Ax) * (Cy - Ay) = 1 * 4 = 4
       - dx2 * dy1 = dx1 * dy2 なので同一直線上の点である
     - A < B < Cでなくても当てはまる
-- 最大公約数
+- 最小公倍数
   - a * b / gcd(a, b)
 
 ### その他
