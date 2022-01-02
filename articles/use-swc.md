@@ -46,7 +46,8 @@ https://swc.rs/docs/configuration/swcrc
 
 NestJSの場合はデコレーター周りの設定をする必要があります。
 
-```json:.swcrc
+```json
+// .swcrc
 {
   "jsc": {
     "parser": {
@@ -73,7 +74,8 @@ sオプションでソースマップを有効化
 
 https://swc.rs/docs/usage/cli
 
-```json:package.json
+```json
+// package.json
 "build": "npx swc ${トランスパイル対象のパス} -s -d ${出力先のパス}"
 ```
 
