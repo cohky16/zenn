@@ -2,7 +2,7 @@
 title: "NestJSのビルドをswcで高速化した話"
 emoji: "🕙"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["swc", "NestJS", "TypeScript", "Jest", "ts-node", "ts-jest"]
+topics: ["swc", "NestJS", "TypeScript", "ts-node"]
 published: true
 ---
 
