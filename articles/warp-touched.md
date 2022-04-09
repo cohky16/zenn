@@ -54,11 +54,11 @@ Warp特有の機能でいうと、コマンドをブロックで管理したり�
 
 `Shift + Enter`　で改行
 
-https://i.gyazo.com/2dcf2e8d3373c7f4a3b638d633046cc2.gif
+[![Image from Gyazo](https://i.gyazo.com/2dcf2e8d3373c7f4a3b638d633046cc2.gif)](https://gyazo.com/2dcf2e8d3373c7f4a3b638d633046cc2)
 
 `^ + Shift + Up or Down`で複数行選択ができます。
 
-https://i.gyazo.com/733cfa59944e9ec03b19ff23437c90f5.gif
+[![Image from Gyazo](https://i.gyazo.com/733cfa59944e9ec03b19ff23437c90f5.gif)](https://gyazo.com/733cfa59944e9ec03b19ff23437c90f5)
 
 まとめてコマンドを実行したい場合は便利です。
 
@@ -66,7 +66,7 @@ https://i.gyazo.com/733cfa59944e9ec03b19ff23437c90f5.gif
 
 Warpはコマンドの入力と出力をブロック単位で管理するため、コピペが簡単です。
 
-https://i.gyazo.com/b600db662bec65208a97473b05934e54.gif
+[![Image from Gyazo](https://i.gyazo.com/b600db662bec65208a97473b05934e54.gif)](https://gyazo.com/b600db662bec65208a97473b05934e54)
 
 また、`⌘ + Shift + S`でコマンドのリンクも作成することができるので、コマンドの共有も簡単にできます。
 
@@ -78,7 +78,7 @@ https://i.gyazo.com/b600db662bec65208a97473b05934e54.gif
 
 `^ + Shift + R`でワークフローを表示して、使いたいコマンドを選択します。
 
-https://i.gyazo.com/bcae24516c607f7b0859007951ee3098.gif
+[![Image from Gyazo](https://i.gyazo.com/bcae24516c607f7b0859007951ee3098.gif)](https://gyazo.com/bcae24516c607f7b0859007951ee3098)
 
 自分でワークフローを登録することもできます。手順は[こちら](https://docs.warp.dev/features/workflows)を参照ください。
 
