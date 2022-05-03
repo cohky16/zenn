@@ -31,7 +31,7 @@ https://github.com/cohky16/poc/tree/master/sls/compose
 以下はこれらを作った手順です。
 
 - Dockerfileを作成
-  - https://github.com/cohky16/poc/blob/master/sls/compose/Dockerfile
+  https://github.com/cohky16/poc/blob/master/sls/compose/Dockerfile
   - ベースイメージは適当です。
   - v3.15.0をインストールします。
 - .envを作成
@@ -40,7 +40,7 @@ https://github.com/cohky16/poc/tree/master/sls/compose
       - AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
       - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
 - docker-compose.ymlを作成
-  - https://github.com/cohky16/poc/blob/master/sls/compose/docker-compose.yml
+  https://github.com/cohky16/poc/blob/master/sls/compose/docker-compose.yml
   - `docker compose up -d`でコンテナを作成して動かす
   - `docker compose exec serverless /bin/bash`でコンテナに入る
 - service-aとbを作成
@@ -48,7 +48,7 @@ https://github.com/cohky16/poc/tree/master/sls/compose
   - `serverless create --template aws-nodejs --path service-b`
   - あくまで確認なのでテンプレのまま利用する。
 - serverless-compose.ymlを作成
-  - https://github.com/cohky16/poc/blob/master/sls/compose/serverless-compose.yml
+  https://github.com/cohky16/poc/blob/master/sls/compose/serverless-compose.yml
   - pathにデプロイしたいサービスのパスを入れる
 - `serverless deploy`を実行
   - `@serverless/compose`がインストールされていない場合、インストールの有無を聞かれるのでインストール
