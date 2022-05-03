@@ -10,7 +10,7 @@ ServerlessFrameworkにもDockerでいうDockerCompose的なものが来ました
 
 https://www.serverless.com/blog/serverless-framework-compose-multi-service-deployments
 
-実際に私が携わっているプロジェクトでも活かせそうだと思ったので、実際に試してみました。
+実際に私が携わっているプロジェクトでも活かせそうだと思ったので、試してみました。
 
 ## 概要
 
