@@ -1,5 +1,5 @@
 ---
-title: "単体テストについて書きたい"
+title: "単体テストに関する知見"
 emoji: "👷"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["単体テスト", "品質向上"]
